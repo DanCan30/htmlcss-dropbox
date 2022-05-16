@@ -13,13 +13,13 @@ body {
 }
 
 .big-container {
-    width: 80%;
+    width: 60%;
     max-width: 3092px;
     margin: 0 auto;
 }
 
 .little-container {
-    width: 70%;
+    width: 50%;
     max-width: 2800px;
     margin: 0 auto;
 }
@@ -37,6 +37,10 @@ a {
     color: #0E0E0E;
 }
 
+img {
+    width: 100%;
+}
+
 
 
 /* Header */
@@ -45,6 +49,12 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
+    font-size: 1.2rem;
+}
+
+header img {
+    width: 20%;
 }
 
 .head-menu {
@@ -63,6 +73,10 @@ header {
     padding-right: 30px;
 }
 
+.head-menu.left ul {
+    padding-left: 20px;
+}
+
 .head-menu li {
     display: inline-block;
     padding: 0 20px;
@@ -70,7 +84,63 @@ header {
 
 .start {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 8px 20px;
     background: #297AFE;
     color: white;
+}
+
+
+/* Main */
+
+/* Jumbo */
+
+.jumbo-container {
+    background: #B4D0E7;
+}
+
+.jumbo-container .big-container {
+    position: relative;
+    top: 100px;
+}
+
+.jumbo-container h1 {
+    font-size: 5.5rem;
+    padding-bottom: 50px;
+    font-weight: 800;
+}
+
+.jumbo-left {
+    width: 30%;
+    position: relative;
+}
+
+.jumbo-right {
+    width: 70%;
+    margin-left: 20px;
+}
+
+.jumbo-left p {
+    font-size: 1.4rem;
+}
+
+.jumbo-left .top-btn {
+    background: #297AFE;
+    color: white;
+    display: inline-block;
+    padding: 15px 20px;
+    margin-top: 60px;
+    font-size: 1.3rem;
+}
+
+.jumbo-left .bot-btn {
+    display: inline-block;
+    margin: 40px 0;
+    font-size: 1.3rem;
+}
+
+.jumbo-left i {
+    font-size: 4rem;
+    position: absolute;
+    top: 70%;
+    left: 0;
 }
