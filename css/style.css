@@ -46,11 +46,17 @@ img {
 /* Header */
 
 header {
+    background: white;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
     font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: 1px solid lightgrey;
 }
 
 header img {
@@ -91,6 +97,10 @@ header img {
 
 
 /* Main */
+
+main {
+    margin-top: 123px;
+}
 
 /* Jumbo */
 
@@ -143,4 +153,157 @@ header img {
     position: absolute;
     top: 70%;
     left: 0;
+}
+
+
+/* Business plans */
+
+.business-plans {
+    margin: 200px auto;
+}
+
+.business-plans h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.check1 {
+    margin-right: 50px;
+}
+
+.check1::before {
+    content:'';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 6px solid blue;
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.check2::before {
+    content:'';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.plans-container {
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.plans-card {
+    width: 30%;
+    border: 1px solid lightgrey;
+}
+
+.plan-name {
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-body h3,
+.contact-card-body h3 {
+    padding: 10px 0 20px;
+    font-size: 2rem;
+}
+
+.subscription-cost {
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.subscription-time {
+    margin-bottom: 50px;
+    color: grey;
+}
+
+.card-body ul li {
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+
+.card-body ul li div {
+    display: inline-block;
+    height: 100%;
+}
+
+.card-icon {
+    width: 5%;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.card-spec {
+    width: 90%;
+}
+
+.card-button {    
+    margin: 50px 0;
+    background: #297AFE;
+    color: white;
+    display: inline-block;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.buynow {
+    color: blue;
+    text-decoration: underline;
+}
+
+.card-body hr {
+    width: 20%;
+    background: lightgrey;
+    margin: 50px 0;
+}
+
+.feature {
+    margin: 10px;
+}
+
+.bluecheck {
+    color: blue;
+}
+
+.contact-card {
+    margin-top: 50px;
+    border: 1px solid lightgrey;
+}
+
+.contact-card-body {
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.contact-card-body p {
+    margin-top: 50px;
+}
+
+.contact-card-left {
+    width: 60%;
+}
+
+.contact-card-right {
+    width: 25%;
+}
+
+.contact-card-right a {
+    display: inline-block;
+    width: 100%;
+    background: #297AFE;
+    padding: 15px 20px;
+    color: white;
+    text-align: center;
 }
