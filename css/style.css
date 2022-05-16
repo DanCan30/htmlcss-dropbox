@@ -1,0 +1,76 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.big-container {
+    width: 80%;
+    max-width: 3092px;
+    margin: 0 auto;
+}
+
+.little-container {
+    width: 70%;
+    max-width: 2800px;
+    margin: 0 auto;
+}
+
+.flx {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #0E0E0E;
+}
+
+
+
+/* Header */
+
+header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-menu {
+    width: 30%;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.head-menu.left {
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+.head-menu.right {
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.head-menu li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.start {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #297AFE;
+    color: white;
+}
