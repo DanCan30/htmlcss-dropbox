@@ -41,11 +41,11 @@ img {
     width: 100%;
 }
 
-.flex-40-width {
+.width40 {
     width: 40%;
 }
 
-.flex-60-width {
+.width60 {
     width: 60%;
 }
 
@@ -338,4 +338,41 @@ main {
     padding: 10px 15px;
     border: 1px solid black;
     font-size: 1.1rem;
+}
+
+
+/* Dropbod Business */
+
+.dbxbusiness {
+    margin: 200px auto;
+}
+
+.dbxbusiness-feature {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dbxbusiness h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.dbxbusiness-card {
+    width: 30%;
+    padding: 20px;
+}
+
+.dbxbusiness-card h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.dbxbusiness h2:last-of-type {
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+
+.dbxbusiness a {
+    color: blue;
+    text-decoration: underline;
 }
