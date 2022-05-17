@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -66,11 +70,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
-    border-bottom: 1px solid lightgrey;
-}
-
-header img {
-    width: 20%;
+    border-bottom: 2px solid lightgrey;
 }
 
 .head-menu {
@@ -93,21 +93,41 @@ header img {
 }
 
 .head-menu li {
+    border-bottom: 2px solid white;
+    transition: .5s;
+}
+
+.head-menu li a {
+    display: inline-block;
     padding: 50px 20px;
+}
+
+.head-menu li:hover {
+    border-bottom: 2px solid black;
+    font-weight: 600;
 }
 
 .start {
     display: inline-block;
     padding: 8px 20px;
+    margin-left: 5px;
     background: #0061FF;
+    border: 1px solid #0061FF;
     color: white;
+    transition: .5s;
+}
+
+.start:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 
 /* Main */
 
 main {
-    margin-top: 123px;
+    margin-top: 120px;
 }
 
 
@@ -144,17 +164,29 @@ main {
 
 .jumbo-left .top-btn {
     background: #0061FF;
+    border: 1px solid #0061FF;
     color: white;
     display: inline-block;
     padding: 15px 20px;
     margin-top: 60px;
     font-size: 1.3rem;
+    transition: .5s;
+}
+
+.top-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 .jumbo-left .bot-btn {
     display: inline-block;
     margin: 40px 0;
     font-size: 1.3rem;
+}
+
+.bot-btn:hover {
+    text-decoration: underline;
 }
 
 .jumbo-left i {
@@ -164,11 +196,29 @@ main {
     left: 0;
 }
 
+.down-arrow:hover .fa-arrow-down {
+    animation: bounce 1s linear infinite;
+}
+
+@keyframes bounce {
+    0% {
+        top: 70%;
+    }
+
+    50% {
+        top: 72%;
+    }
+
+    100% {
+        top: 70%;
+    }
+}
+
 
 /* Business plans */
 
 .business-plans {
-    margin: 200px auto;
+    margin: 200px auto 0;
 }
 
 .business-plans h2 {
@@ -319,6 +369,10 @@ main {
 
 /* Partners */
 
+.partner-box {
+    padding-top: 200px;
+}
+
 .partner-right {
     padding: 60px;
 }
@@ -338,6 +392,12 @@ main {
     padding: 10px 15px;
     border: 1px solid black;
     font-size: 1.1rem;
+    transition: .5s;
+}
+
+.partner-right a:hover {
+    background: black;
+    color: white;
 }
 
 
@@ -395,6 +455,7 @@ main {
     position: relative;
     width: 50%;
     height: 17vw;
+    transition: .2s;
 }
 
 .partner-agency img {
@@ -404,6 +465,11 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     filter: invert(1);
+}
+
+.partner-agency:hover {
+    box-shadow: 0 0 0 30px rgba(255,255,255,.5) inset;
+    cursor: pointer;
 }
 
 .pl-center {
@@ -461,6 +527,7 @@ main {
 
 .free-trial {
     background: #B4D0E7;
+    padding-top: 200px;
 }
 
 .ft-container {
@@ -470,7 +537,7 @@ main {
 
 .free-trial h2 {
     color: #61082B;
-    padding: 100px 0;
+    padding-bottom: 100px;
     width: 50%;
 }
 
@@ -480,6 +547,13 @@ main {
     padding: 15px 20px;
     background: white;
     text-align: center;
+    align-self: flex-start;
+    transition: .5s;
+}
+
+.free-trial a:hover {
+    background: black;
+    color: white;
 }
 
 
@@ -553,6 +627,10 @@ footer .contact {
 
 .foot-info ul li {
     line-height: 40px;
+}
+
+.foot-info ul li:hover {
+    text-decoration: underline;
 }
 
 .language-settings hr {
