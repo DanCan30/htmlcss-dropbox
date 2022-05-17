@@ -28,6 +28,10 @@ body {
     display: flex;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
 ul {
     list-style: none;
 }
@@ -57,7 +61,6 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
     font-size: 1.2rem;
     position: fixed;
     top: 0;
@@ -72,7 +75,6 @@ header img {
 
 .head-menu {
     width: 30%;
-    padding: 20px 0;
     align-items: center;
 }
 
@@ -91,8 +93,7 @@ header img {
 }
 
 .head-menu li {
-    display: inline-block;
-    padding: 0 20px;
+    padding: 50px 20px;
 }
 
 .start {
@@ -171,7 +172,6 @@ main {
 }
 
 .business-plans h2 {
-    font-size: 3rem;
     margin-bottom: 50px;
 }
 
@@ -353,7 +353,6 @@ main {
 }
 
 .dbxbusiness h2 {
-    font-size: 3rem;
     margin-bottom: 50px;
 }
 
@@ -470,7 +469,6 @@ main {
 }
 
 .free-trial h2 {
-    font-size: 3rem;
     color: #61082B;
     padding: 100px 0;
     width: 50%;
@@ -482,4 +480,91 @@ main {
     padding: 15px 20px;
     background: white;
     text-align: center;
+}
+
+
+/* FAQ */
+
+.faq {
+    margin: 100px auto;
+}
+
+.faq h2 {
+    margin-bottom: 100px;
+}
+
+.faq-box {
+    padding: 50px 0;
+    border-top: 1px solid grey;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-box p {
+    display: none;
+    padding: 30px 0;
+}
+
+.faq-box i {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transition: .2s linear;
+}
+
+.faq-box:hover p {
+    display: inline-block;
+    width: 80%;
+}
+
+.faq-box:hover i {
+    transform: rotate(180deg);
+}
+
+.faq-box:last-child {
+    border-bottom: 1px solid grey;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: black;
+}
+
+footer h3,
+footer a {
+       color: white;
+}
+
+footer .contact {
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.foot-info {
+    width: 20%;
+}
+
+.foot-info h3 {
+    padding: 30px 0;
+    font-size: 2rem;
+}
+
+.foot-info ul li {
+    line-height: 40px;
+}
+
+.language-settings hr {
+    margin: 50px 0;
+    width: 10%;
+}
+
+.language-settings {
+    padding: 50px 0;
+    color: grey;
+}
+
+.language-settings span {
+    margin: 0 5px 0 10px;
 }
