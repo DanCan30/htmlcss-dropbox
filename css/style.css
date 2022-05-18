@@ -57,6 +57,19 @@ img {
     width: 60%;
 }
 
+.layer {
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
 
 /* Header */
 
@@ -69,13 +82,45 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     border-bottom: 2px solid lightgrey;
 }
 
 .head-menu {
     width: 30%;
     align-items: center;
+}
+
+.menu-item {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-list {
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.dropdown-item {
+    padding: 10px 0;
+    cursor: pointer;
+
+}
+
+.menu-item:hover .dropdown-list {
+    display: inline-block;
+}
+/* 
+.menu-item:hover .layer  {
+    display: block;
+} */
+
+.dropdown-list li:hover {
+    background-color: lightgrey;
 }
 
 .head-menu.left {
@@ -88,28 +133,33 @@ header {
     padding-right: 30px;
 }
 
-.head-menu.left ul {
+.nav-left {
     padding-left: 20px;
 }
 
 .head-menu li {
     border-bottom: 2px solid white;
     transition: .5s;
+    margin: 0 20px;
 }
 
 .head-menu li a {
     display: inline-block;
-    padding: 50px 20px;
+    padding: 30px 0;
 }
 
-.head-menu li:hover {
+.login {
+    border-bottom: 2px solid white;
+    transition: .5s;
+}
+
+.login:hover {
     border-bottom: 2px solid black;
-    font-weight: 600;
 }
 
 .start {
     display: inline-block;
-    padding: 8px 20px;
+    padding: 8px 30px;
     margin-left: 5px;
     background: #0061FF;
     border: 1px solid #0061FF;
@@ -127,7 +177,7 @@ header {
 /* Main */
 
 main {
-    margin-top: 120px;
+    margin-top: 90px;
 }
 
 
@@ -135,6 +185,7 @@ main {
 
 .jumbo-container {
     background: #B4D0E7;
+    z-index: 1;
 }
 
 .jumbo-container .big-container {
@@ -316,6 +367,10 @@ main {
     text-align: center;
 }
 
+.card-button:hover {
+    background: #297AFE;
+}
+
 .buynow {
     color: blue;
     text-decoration: underline;
@@ -355,15 +410,6 @@ main {
 
 .contact-card-right {
     width: 25%;
-}
-
-.contact-card-right a {
-    display: inline-block;
-    width: 100%;
-    background: #0061FF;
-    padding: 15px 20px;
-    color: white;
-    text-align: center;
 }
 
 
@@ -576,7 +622,7 @@ main {
 
 .faq-box p {
     display: none;
-    padding: 30px 0;
+    padding-top: 30px;
 }
 
 .faq-box i {
@@ -638,7 +684,7 @@ footer .contact {
     width: 10%;
 }
 
-.language-settings {
+.language-settings, .language-settings a {
     padding: 50px 0;
     color: grey;
 }
